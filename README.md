@@ -7,4 +7,5 @@ On First install
 brew install dashlane 
 git clone https://github.com/kalw/osx-backup.git
 brew bundle install -file=osx-backup/Brewfile
+code-insiders --install-extension Shan.code-settings-sync
 ```
