@@ -6,7 +6,7 @@ On First install
 # Install Homebrew 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # get the bundle
-curl -Lso ~/Brewfile https://raw.githubusercontent.com/kalw/osx-backup/Brewfile
+curl -Lso ~/Brewfile https://raw.githubusercontent.com/kalw/osx-backup/master/Brewfile
 # Install necessary material
 brew bundle install -file=~/Brewfile
 # Configure VSCode
