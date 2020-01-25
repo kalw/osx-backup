@@ -5,12 +5,10 @@ On First install
 ```
 # Install Homebrew 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# Install Dashlane
-brew cask install dashlane 
-# Clone install material
-git clone https://github.com/kalw/osx-backup.git
+# get the bundle
+curl -Lso ~/Brewfile https://raw.githubusercontent.com/kalw/osx-backup/Brewfile
 # Install necessary material
-brew bundle install -file=osx-backup/Brewfile
+brew bundle install -file=~/Brewfile
 # Configure VSCode
 code-insiders --install-extension Shan.code-settings-sync
 # Setup Chrome as default
