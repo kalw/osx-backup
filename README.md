@@ -8,7 +8,7 @@ On First install
 # get the bundle
 curl -Lso ~/Brewfile https://raw.githubusercontent.com/kalw/osx-backup/master/Brewfile
 # Install necessary material
-brew bundle install -file=~/Brewfile
+brew bundle install --file=~/Brewfile
 # Configure VSCode
 code-insiders --install-extension Shan.code-settings-sync
 # Setup Chrome as default
