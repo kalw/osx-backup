@@ -7,6 +7,8 @@ On First install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # get the bundle
 curl -Lso ~/Brewfile https://raw.githubusercontent.com/kalw/osx-backup/master/Brewfile
+# get minimal tmux config
+curl -Lso ~/.tmux.conf https://raw.githubusercontent.com/kalw/osx-backup/master/.tmux.conf
 # Install necessary material
 brew bundle install --file=~/Brewfile
 # Configure VSCode
