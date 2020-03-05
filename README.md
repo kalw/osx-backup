@@ -22,5 +22,5 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 # Disable transparency in the menu bar and elsewhere on Yosemite
-defaults write com.apple.universalaccess reduceTransparency -bool true
+sudo defaults write com.apple.universalaccess reduceTransparency -bool true
 ```
