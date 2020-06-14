@@ -23,4 +23,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 sudo nvram SystemAudioVolume=" "
 # Disable transparency in the menu bar and elsewhere on Yosemite
 sudo defaults write com.apple.universalaccess reduceTransparency -bool true
+# show dotfiles
+sudo defaults write com.apple.Finder AppleShowAllFiles true ; killall Finder
 ```
