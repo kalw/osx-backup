@@ -15,14 +15,20 @@ brew bundle install --file=~/Brewfile
 code-insiders --install-extension Shan.code-settings-sync
 # Setup Chrome as default
 open -a "Google Chrome" --args --make-default-browser
+# custom config
+user=$(stat -f %Su /dev/console); 
 # Enable AppExpose 4 fingers 
-defaults write com.apple.trackpad.TrackpadFourFingerVertSwipeGesture -int 2
+sudo -u $user defaults write com.apple.trackpad.TrackpadFourFingerVertSwipeGesture -int 2
 # Enable tap to click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+sudo -u $user defaults write defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+sudo -u $user defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 # Disable transparency in the menu bar and elsewhere on Yosemite
-defaults write com.apple.universalaccess reduceTransparency -bool true
+sudo -u $user defaults write com.apple.universalaccess reduceTransparency -bool true
 # show dotfiles
-defaults write com.apple.Finder AppleShowAllFiles true ; killall Finder
+sudo -u $user defaults write com.apple.Finder AppleShowAllFiles true ; killall Finder
+# show batteriy percentage
+sudo -u $user defaults write com.apple.menuextra.battery -ShowPercent YES
+sudo -u $user killall SystemUIServer
 ```
