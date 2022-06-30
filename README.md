@@ -3,6 +3,10 @@
 On First install
 
 ```
+# Install rosetta if M1
+if [[ $(uname -m) == 'arm64' ]]; then
+  softwareupdate --install-rosetta --agree-to-license
+fi
 # Install Homebrew 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # get the bundle
